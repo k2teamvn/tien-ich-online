@@ -6,25 +6,75 @@
     <meta http-equiv="refresh" content="5;url=https://1s.is/kho-tien-ich-online/">
     <title>Redirecting...</title>
     <style>
+        /* Reset mặc định */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        .message {
+            background: linear-gradient(135deg, #6f86d6, #48c6ef);
+            color: #fff;
             text-align: center;
+            padding: 1em;
         }
-        .message p {
-            margin: 0.5em 0;
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
         }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #ffdd57;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         .timer {
-            font-size: 1.5em;
-            color: #007BFF;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* Media query cho màn hình nhỏ */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .timer {
+                font-size: 1.8em;
+            }
         }
     </style>
     <script>
@@ -41,9 +91,10 @@
     </script>
 </head>
 <body>
-    <div class="message">
+    <div class="container">
+        <h1>Redirecting...</h1>
         <p>You will be redirected to <a href="https://1s.is/kho-tien-ich-online/">Kho Tiện Ích Online</a> in <span id="timer" class="timer">5</span> seconds.</p>
-        <p>If you are not redirected, <a href="https://1s.is/kho-tien-ich-online/">click here</a>.</p>
+        <p>If the redirection doesn’t happen, <a href="https://1s.is/kho-tien-ich-online/">click here</a>.</p>
     </div>
 </body>
 </html>
